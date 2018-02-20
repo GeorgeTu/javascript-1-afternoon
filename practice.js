@@ -84,8 +84,8 @@ function doubleCheck(arr){
 //and goodBoy (a boolean).
 
 var dog = {
-  name: "BEAGLE",
-  color: "black",
+  name: 'beagle',
+  color: 'black',
   age: 7,
   goodBoy: true
 }
@@ -102,11 +102,11 @@ var devMountainClassPet = dog.name;
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof"
 
-  var dog = {
-     bark: function(){
+ 
+     dog.bark = function(){
        return "Woof woof"
      }
-   };
+   
   
 
 
