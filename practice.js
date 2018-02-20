@@ -84,7 +84,7 @@ function doubleCheck(arr){
 //and goodBoy (a boolean).
 
 var dog = {
-  name: "Rover",
+  name: "BEAGLE",
   color: "black",
   age: 7,
   goodBoy: true
@@ -128,31 +128,16 @@ var ruff = dog.bark();
 
 //Return mySum.
 
-//  function looper(arr){
-//     var mySum = 0;
-//   for(var i = 0; i < arry.length; i++){
-//     if(arr%2!==0){
-//       mySum += arr[i];
-//     } else 
-//     if(arr >= 100){
-//       mySum += arr[i];
-//     }
-//   }
-//   return mySum; 
-//  }
+ function looper(arr){
+    var mySum = 0;
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i]%2!==0 || arr[i] >=100){
+      mySum += arr[i];
+      
+    }
+    } return mySum
+  }
 
-// function looper(arr){
-//   mySum=0;
-//   arr.forEach(looper(val, i, arr)){
-//     if(arr%2!==0){
-//       mySum += arr[i];
-//       } else 
-//         if(arr >= 100){
-//           mySum += arr[i];
-//         }
-// }
-// return mySum;
-// }
 
 
 
@@ -244,7 +229,9 @@ let pondScope = ['duck', 'realDuck'];
 //function which returns your name.
 
 function outerFn (){
-  return "George Tu"
+  return function (){
+    return "George Tu"
+  }
 };
   
 
@@ -257,4 +244,4 @@ var innerFn = outerFn();
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
-var finalResult = innerFn(outerFn);
+var finalResult = innerFn(outerFn)
